@@ -1,0 +1,228 @@
+/*
+Theme Name: Shop
+Author: Rico
+Author URI: 
+Description: Ready to use website theme for shops or other type of business. Use featured images or page titles to list pages (not posts) on the front page. The theme is derived from Twenty Twelve.
+Version: 1.02
+License: 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  light, one-column, fixed-width, white, gray, custom-menu, custom-background, custom-header, rtl-language-support, translation-ready
+
+Text Domain: shop
+
+This theme and pictures or images, like WordPress, are licensed under the GPL.
+*/
+body{
+
+	margin: 0;
+	padding: 0;
+	margin-top: -10px;
+}
+
+/* Header */
+
+header nav div.menu-header-container ul{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #666666;
+
+}
+
+div.menu-header-container ul.menu li{
+	list-style: none;
+	margin-top: 10px;
+	margin-left: -40px;
+	padding: 20px;
+	margin-bottom: 10px;
+	
+
+}
+
+div.menu-header-container ul.menu li:hover{
+
+	background-color: #be9292;
+	padding: 20px;
+
+
+}
+
+div.menu-header-container ul.menu li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	
+	
+
+}
+nav .hum{
+	display: none;
+	padding: 1px;
+	
+}
+
+
+/* Mobile version */
+/* above 600px false */
+@media only screen and (max-width: 600px){
+	header nav div.menu-header-container ul{
+		display: none;
+		
+	}
+	nav .hum{
+		display: block;
+		position: relative;
+		left: 90%;
+		cursor: pointer;
+	}
+	nav .hum:active{
+		color: #be9292;
+	}
+	.banner .gallery img{
+		width: 600px !important;
+		min-width: 500px;
+		margin-bottom: 10px;
+		
+	}
+
+	.services ul.items li{
+		border-bottom: 4px solid #000000;
+		margin: 20px;
+	}
+	.services hr{
+		display: none;
+	}
+	
+	
+}
+
+@media only screen and (min-width: 600px){
+	
+header nav div.menu-header-container ul{
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-evenly;
+}
+
+}
+
+
+/* Banner gallery */
+.banner .gallery-1{
+	margin-top: -40px;
+	margin-bottom: 50px;
+}
+
+.banner .gallery-2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-right:-10px;
+	margin-left:-10px;
+	margin-bottom: 100px;
+
+
+}
+
+.banner .gallery-2 img{
+	width: 48%;
+	min-width: 500px;
+	margin-bottom: 10px;
+	
+}
+
+/* Services */
+
+.services ul.items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+.services ul.items li img{
+	width: 100px;
+}
+.services ul.items li{
+	list-style: none;
+	width: 200px;
+	text-align: center;
+}
+
+.services hr{
+	margin-right: 150px;
+	margin-left: 150px;
+
+}
+/*Products Categories */
+section.products-categories{
+	display: flex;
+	flex-direction:column;
+
+	
+}
+section.products-categories ul.parent{
+	display: flex;
+}
+section.products-categories ul.parent li{
+	list-style: none;
+	padding: 20px;
+	background-color: #666666;
+}
+section.products-categories ul.parent li:hover{
+	background-color: #be9292;
+	cursor: pointer;
+	padding: 20px;
+}
+
+.products-categories ul.child{
+	display: none;
+	background-color: #666666;
+	position: sticky;
+	
+}
+
+.products-categories ul.child li{
+	list-style: none;
+	padding: 20px;
+	z-index: 1;
+	position: relative;
+
+}
+
+.products-categories ul.child li:hover{
+	cursor: pointer;
+	background-color: #be9292;
+	padding: 20px;
+}
+
+
+/* Products */
+section.products ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+section.products ul li{
+	width: 15%;	
+	height: 25%;
+	min-width: 300px;
+	min-height: 300px;
+	list-style: none;
+	box-shadow: 2px 4px 6px #666666;
+	padding: 20px;
+	margin: 5%;
+}
+
+section.products ul li img{
+	width: 60%;
+	height: 50%;
+	min-width: 100px;
+}
+
+/* footer */
