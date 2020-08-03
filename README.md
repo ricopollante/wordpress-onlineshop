@@ -1,2 +1,2 @@
 # wordpress-onlineshop
-plugins: woocommerce
+plugin dependancies: woocommerce
