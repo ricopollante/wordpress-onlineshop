@@ -1,1 +1,2 @@
 # wordpress-onlineshop
+plugins: woocommerce
